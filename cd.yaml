@@ -21,7 +21,7 @@ spec:
         - containerPort: 8081
         volumeMounts:
         - name: chatting-storage
-          mountPath: /data
+          mountPath: /app
       volumes:
       - name: chatting-storage
         persistentVolumeClaim:
