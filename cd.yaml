@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: chatting
-        image: leeinhong9512/panda-chatting:e75c77dc6d10c9e4bcc3fc1676a07e9a73128388
+        image: leeinhong9512/panda-chatting:88fd2d2d26c6d8aedcdd1be725c12891c31085cc
         ports:
         - containerPort: 8081
         volumeMounts:
