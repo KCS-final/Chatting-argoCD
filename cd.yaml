@@ -19,13 +19,6 @@ spec:
         image: leeinhong9512/panda-chatting:f546aec78ebd35d515d2e77b793904c499aaf550
         ports:
         - containerPort: 8081
-        volumeMounts:
-        - name: chatting-storage
-          mountPath: /app
-      volumes:
-      - name: chatting-storage
-        persistentVolumeClaim:
-          claimName: chatting-pvc  # 수정: PVC 이름을 chatting-pvc로 변경
       nodeSelector:
         worker: was  # 노드 셀렉터 추가함
 ---
