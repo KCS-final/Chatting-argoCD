@@ -27,7 +27,7 @@ spec:
         persistentVolumeClaim:
           claimName: chatting-pvc  # 수정: PVC 이름을 chatting-pvc로 변경
       nodeSelector:
-        worker: was  # 노드 셀렉터 추가
+        worker: was  # 노드 셀렉터 추가함
 ---
 apiVersion: v1
 kind: Service
